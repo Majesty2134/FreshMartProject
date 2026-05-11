@@ -1,0 +1,265 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color : #1a1a1a;    
+    background-color: #fafaf7;
+    display : block;
+ }
+
+ nav {
+    border: 1 solid #ccc;
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem ;
+    background-color:#ffff
+ }
+
+ .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color : #0f6e56;
+    letter-spacing: -0.5px;
+ }
+
+ .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;   
+}
+
+.nav-links a {
+    text-decoration: none;
+     font-size: 15px;
+    color: #555;
+    font-family: Arial, sans-serif;   
+}
+
+.nav-action {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn{
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+.btn-primary {
+
+    background-color: #1d9e75;
+    color: white;
+    border: none;
+}
+
+.hero {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    background-color: #e1f5ee;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #085041;
+    line-height: 1.25;
+    max-width: 500px;
+}
+
+.hero-text p {
+margin-top: 1rem;
+    font-size: 17px;
+    color: #0f6e56;
+    max-width: 440px;
+    line-height: 1.7;
+    font-family: Arial, sans-serif;
+}
+
+.hero-action {
+    display: flex;
+    gap: 12px;
+    margin-top: 2rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.hero-image{
+   width: 240px;
+    height: 200px;
+     background: #9fe1cb;
+     border-radius: 16px;
+     display: flex;
+     align-items :center;
+     justify-content: center;
+     font-size: 80px;
+     flex-shrink:0;
+}
+
+.section-gray {
+    background-color: #f0f0ec;   
+}
+
+.section {
+    padding: 3rem 2rem;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.categories {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    flex: 1;
+    min-width: 110px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e0;
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-icon {
+font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #E5E5E0;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.product-icon {
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0ec;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+.product-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #1d9e75;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.product-price {
+    font-size: 15px;
+    color: #0f6e56;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.promo {
+    background-color: #0f6e56;
+    padding: 3rem 2rem;
+    color: #e1f5ee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.promo h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.promo p {
+    margin-top: 1.5rem;
+    font-size: 15px;
+    opacity: 0.8;
+    font-family: arial, sans-serif;
+}
+
+.promo-btn {
+    padding:12px 28px;
+    background-color:#9fe1cb;
+    border: none;
+    border-radius: 8px;
+    color:#04342c;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family:arial, sans-serif;
+}
+
+footer {
+    background-color: #f0f0ec;
+    border-top: 1px solid #e5e5e0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 14px;
+    color: #888;
+    font-family: Arial, sans-serif;
+}
+
